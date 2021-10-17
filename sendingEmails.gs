@@ -45,7 +45,7 @@ function processRows(action) {
   for(let i=0; i<data.get(key).length;i++){
     body = body+"<tr><td>"+data.get(key)[i][1]+"</td><td>"+data.get(key)[i][2]+"</td><td>"+data.get(key)[i][3]+"</td></tr>"
   }
-  body = body+ "</table><h3>Please put in your comment in the “Comments” column corresponding to these in the following sheet: https://docs.google.com/spreadsheets/d/1pRp26HqnGo5Ald2hrfFNlAC13VO5F-W9mlFP1V83Bso/edit?usp=sharing </h3></body></html>";
+  body = body+ "</table><h3>Please put in your comment in the “Comments” column corresponding to these in the following sheet:  </h3></body></html>";
       var sub = 'Request budget';
       MailApp.sendEmail({
         to: key,
